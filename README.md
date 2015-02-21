@@ -1,6 +1,7 @@
 # hubot-tube-status
 
-Get the tube status from transport for london (TFL)
+Get the tube status from transport for london (TFL) using the TfL
+Open Data API.
 
 See [`src/tube-status.coffee`](src/tube-status.coffee) for full documentation.
 

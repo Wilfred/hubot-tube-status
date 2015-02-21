@@ -2,21 +2,25 @@
 #   Get the tube status from transport for london (TFL)
 #
 # Configuration:
-#   LIST_OF_ENV_VARS_TO_SET
+#   HUBOT_TFL_APP_ID
+#   HUBOT_TFL_APP_KEY
+#
+# You can get API keys at
+# https://api-portal.tfl.gov.uk/
 #
 # Commands:
-#   hubot hello - <what the respond trigger does>
-#   orly - <what the hear trigger does>
-#
-# Notes:
-#   <optional notes required for the script>
-#
-# Author:
-#   Wilfred Hughes[@<org>]
+#   hubot tube status - report the current TfL service status
+
+tflAppId = process.env.HUBOT_TFL_APP_ID
+tflAppKey = process.env.HUBOT_TFL_APP_KEY
 
 module.exports = (robot) ->
-  robot.respond /hello/, (msg) ->
+  robot.respond /tube status/, (msg) ->
+    if not tflAppId
+      msg.reply "Dunno. You need to set HUBOT_TFL_APP_ID for me to find out."
+      return
+    if not tflAppKey
+      msg.reply "Dunno. You need to set HUBOT_TFL_APP_KEY for me to find out."
+      return
+      
     msg.reply "hello!"
-
-  robot.hear /orly/, ->
-    msg.send "yarly"
