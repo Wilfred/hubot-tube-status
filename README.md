@@ -20,6 +20,9 @@ Then add **hubot-tube-status** to your `external-scripts.json`:
 ## Sample Interaction
 
 ```
-user1>> hubot hello
-hubot>> hello!
+user> hubot tube status
+Hubot> District: Part closure from Aldgate East to Upminster.
+Hammersmith and City: Part closure from Liverpool Street to Barking.
+Overground: Part closure from Clapham Junction to Kensington (Olympia), Gospel Oak to Stratford, Highbury & Islington to Shadwell and Sydenham to Crystal Palace.
+Waterloo and City: Train service resumes at 0615 on Monday.
 ```
