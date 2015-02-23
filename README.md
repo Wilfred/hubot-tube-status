@@ -1,5 +1,7 @@
 # hubot-tube-status
 
+[![Build Status](https://travis-ci.org/Wilfred/hubot-tube-status.svg?branch=master)](https://travis-ci.org/Wilfred/hubot-tube-status)
+
 Get the tube status from transport for london (TFL) using the TfL
 Open Data API.
 
