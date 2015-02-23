@@ -12,4 +12,4 @@ describe 'tube-status', ->
     require('../src/tube-status')(@robot)
 
   it 'registers a respond listener', ->
-    expect(@robot.respond).to.have.been.calledWith(/tube status/)
+    expect(@robot.respond).to.have.been.calledWith(/tube status/i)
