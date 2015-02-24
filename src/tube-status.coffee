@@ -32,7 +32,7 @@ formatDisruptions = (disruptions) ->
 
 formatSummary = (summary) ->
   linesWithDelays = {}
-  for lineStatus in summary.ArrayOfLineStatus.LineStatus
+  for lineStatus in summary?.ArrayOfLineStatus?.LineStatus or []
     name = lineStatus.Line.Name
     status = lineStatus.Status.Description
     disruptions = lineStatus.BranchDisruptions?.BranchDisruption
