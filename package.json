@@ -1,7 +1,7 @@
 {
   "name": "hubot-tube-status",
   "description": "Get the tube status from transport for london (TFL)",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Wilfred Hughes <me@wilfred.me.uk>",
   "license": "MIT",
   "keywords": [
