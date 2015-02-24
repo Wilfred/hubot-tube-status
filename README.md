@@ -31,6 +31,11 @@ Waterloo and City: Train service resumes at 0615 on Monday.
 
 ## Changelog
 
+### v0.1.2
+
+Fixed an issue where Hubot didn't respond if all lines were running as
+normal.
+
 ### v0.1.1
 
 Initial release.
